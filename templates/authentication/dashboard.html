@@ -28,6 +28,11 @@
 		</div>
 </div>
 
+<div class="event-schedule">
+	<h2>Summer Show Event Schedule</h2>
+	<a class="btn btn-md btn-primary" href="{{ url_for('update_event_schedule') }}">Update Schedule</a>
+</div>
+
 <div class="club-members">
 	<h2>Club Member info</h2> 
 	<a class="btn btn-md btn-primary" href="{{ url_for('update_club_members') }}">Update club members</a><br><br>
@@ -37,6 +42,6 @@
 <div class="upload-photos">
 	<h2>Photos</h2>
 	<a class="btn btn-md btn-primary" href="{{ url_for('edit_photos') }}">upload</a>
-</div>
+</div> <br>
 
 {% endblock %}

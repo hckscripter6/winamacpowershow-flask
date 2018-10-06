@@ -149,8 +149,10 @@ Summer Show
 
 	<script>
 		$(document).ready(function(){
-			$("div.summer-schedule").children("ul").css("background-color", "green")
-			$("div.summer-schedule").children("ul").children("li").addClass("list-group-item")
+			$("div.summer-schedule").find("ul").addClass("list-group");
+			$("div.summer-schedule").find("ul").children("li").addClass("list-group-item");
+
+			
 		});
 	</script>
 	
