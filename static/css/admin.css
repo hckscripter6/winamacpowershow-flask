@@ -1,0 +1,32 @@
+h1 {
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+}
+
+form.project {
+    border: 1px solid grey;
+    display: inline-block;
+    padding: .75em;
+    border-radius: .25em;
+}
+
+div.image-display img {
+    height: 150px;
+    width: auto;
+    border: 1px solid grey;
+    margin-bottom: 1em;
+}
+
+div.image-display a {
+    margin-bottom: 1em;
+}
+
+div.single-image img {
+    height: 250px;
+    width: auto;
+    border: 1px solid grey;
+}
+

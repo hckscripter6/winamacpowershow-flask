@@ -1,0 +1,42 @@
+{% extends 'authentication/authentication-base.html' %}
+
+{% block content %}
+
+<div class="info-text">
+	<h2>Info Text</h2>
+
+<!--	<p><a href="/dashboard/create">Create Text</a></p> -->
+		<ul>
+		{% for display in info %}
+			<li><a href="/dashboard/{{ display.id }}/update">{{ display.name }}</a></li>
+		{% endfor %}
+		</ul><br>
+</div>
+
+<div class="make_updates">
+		<h2>Updates</h2>
+		<a style="margin: 0 0 1em 3.25em;" class='create-update btn btn-sm btn-success' href="{{ url_for('create_notification') }}">Create Update</a>
+
+		<div class="update_box">
+			{% for display in notifications %}
+				<ul>
+					<li><a href="/dashboard/notification/{{ display.id }}/update">{{ display.name }} - {{ display.created_at.strftime('%B %d, %Y') }}</a> -
+						<a class="btn btn-xs btn-danger" href="/dashboard/notification/{{ display.id }}/delete">Delete</a>
+					</li>
+				</ul>
+			{% endfor %}
+		</div>
+</div>
+
+<div class="club-members">
+	<h2>Club Member info</h2> 
+	<a class="btn btn-md btn-primary" href="{{ url_for('update_club_members') }}">Update club members</a><br><br>
+	<a class="btn btn-md btn-primary" href="{{ url_for('update_meeting_date') }}">Update meeting dates</a>
+</div>
+
+<div class="upload-photos">
+	<h2>Photos</h2>
+	<a class="btn btn-md btn-primary" href="{{ url_for('edit_photos') }}">upload</a>
+</div>
+
+{% endblock %}

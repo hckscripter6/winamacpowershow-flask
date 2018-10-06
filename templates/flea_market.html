@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Flea Market Information
+{% endblock %}
+
+{% block content %}
+<div class="info">
+	 <h1>{{ info.name }}</h1>
+	 <div class="body">
+		{{ info.content | safe }}
+	 </div>
+</div>
+{% endblock %}

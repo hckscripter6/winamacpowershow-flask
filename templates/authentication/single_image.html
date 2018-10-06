@@ -1,0 +1,11 @@
+{% extends 'authentication/authentication-base.html' %}
+{% from "authentication/_formhelpers.html" import render_field, render_submit %}
+
+{% block content %}
+<div class="single-image">
+    <h2>Are you sure you want to delete this photo?</h2>
+    <img src="{{ s3projects +'/'+ single.set.name +'/'+ single.name }}">
+    <br><br>
+    <a class="btn btn-md btn-danger" href="/dashboard/photos/{{ single.set.tag +'/'+ single.name }}/delete">Delete</a>
+</div>
+{% endblock content %}

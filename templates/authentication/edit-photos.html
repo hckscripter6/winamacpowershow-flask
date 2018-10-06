@@ -1,0 +1,76 @@
+[{% extends 'authentication/authentication-base.html' %}
+{% from "authentication/_formhelpers.html" import render_field, render_submit %}]
+
+{% block content %}
+
+<h2>Edit Photos</h2>
+<form method="POST" enctype="multipart/form-data" action="{{ url_for('edit_photos') }}" class="project">
+    {{ upload.csrf_token }}
+    {{ render_field(upload.file) }}
+    <div class="form-group">
+        <a class="btn btn-xs btn-primary" data-toggle="modal" data-target="#myModal">Create new project</a>
+        <dt><label>project</label></dt>
+        <dd>
+            <select name="select_set">
+                    <option selected>--</option>
+                {% for display in set_loop %}
+                    <option value="{{ display.tag }}">{{ display.name }}</option>
+                {% endfor %}
+            </select>
+        </dd>
+    </div>
+    {{ render_submit(upload.submit) }}
+</form>
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+    
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Create Project</h4>
+            </div>
+            <div class="modal-body">
+                <form method="POST" enctype="multipart/form-data" action="{{ url_for('edit_photos') }}" class="project">  
+                    {{ add_set.csrf_token }}
+                    {{ render_field(add_set.set) }}
+                    {{ render_submit(add_set.submit) }}
+                </form>
+        
+            <div class="project-list">
+                <ul>
+                    {% for display in set_loop %}
+                    <div class="display-inline">
+                    <li>{{ display.name }} -- <a href="/dashboard/photos/set/{{ display.tag }}" class="btn btn-xs btn-danger">delete</a></li>
+                    </div>
+                    {% endfor %}
+                </ul> 
+            </div>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+    </div>
+</div>
+
+<div class="image-display">
+        {% for display in set_loop %}
+      
+          <div id="{{ display.tag }}">
+            
+            <h2>{{ display.name }}</h2>
+      
+            {% for images in display.images.all() %}
+              <a href="/dashboard/photos/{{ images.set.tag +'/'+ images.name }}">
+                <img src="{{ s3projects +'/'+ images.set.name +'/'+ images.name }}">
+              </a>
+            {% endfor %}
+      
+          </div>
+      
+        {% endfor %}
+      </div>
+{% endblock %}

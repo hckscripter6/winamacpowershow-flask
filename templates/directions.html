@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Directions
+{% endblock %}
+
+{% block content %}
+<div class="directions">
+	<h1>Directions</h1>
+
+	
+	<div class="around">
+		<div class="row">
+			<h2 class="center">Summer Show</h2>
+			<h4 class="center" style="margin: .1em;">10 City Park Drive<br> Winamac, IN 46996</h4>
+			<div class="col-sm-12">
+				<iframe class="map" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=10%20City%20Park%20Drive%20Winamac%2C%20IN%2046996&key=AIzaSyCZfrvKZEGslRl7CkrXd7be7DVXLWBgVQU" allowfullscreen></iframe> 
+			</div>
+		</div>
+	</div>
+	<br>
+	<div class="around">
+		
+		<div class="row">
+			<h2 class="center" id="toy">Toy Show</h2>
+			<h4 class="center" style="margin: .1em;">815 School Drive<br> Winamac, IN 46996</h4>
+			<div class="col-sm-12">
+				<iframe class="map"frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJXRmaCZTCE4gRjgecZcnMO08&key=AIzaSyDkhINotnhDTvY0l6P72Omwt968XO0u7Q8" allowfullscreen></iframe>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

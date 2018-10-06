@@ -1,0 +1,238 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Summer Show
+{% endblock %}
+
+{% block content %}
+	<div class="summer-head">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="info2">
+					<h1>42nd Summer Show!</h1>
+					
+						<h3 class="weekend">3rd Weekend in July</h3>
+					
+						<div class="btn btn-primary btn-md upcoming" data-toggle="modal" data-target="#myModal">Upcoming show dates</div>
+						<!-- Modal -->
+						<div class="modal fade" id="myModal" role="dialog">
+							<div class="modal-dialog">
+							
+								<!-- Modal content-->
+								<div class="modal-content">
+									<div class="modal-header">
+										<button type="button" class="close" data-dismiss="modal">&times;</button>
+										<h4 class="modal-title">Upcoming Dates</h4>
+									</div>
+									<div class="modal-body text-left center-modal">
+										<p>2019 July 18-21---Graham Bradley</p>
+										<p>2020 July 16-19---Moline</p>
+										<p>2021 July 15-18---John Deere</p>
+										<p>2022 July 14-17---Allis & Rumley</p>
+										<p>2023 July 13-16---Oliver</p>
+										<p>2024 July 18-21---Odd Balls</p>
+										<p>2025 July 17-20---Case</p>
+										<p>2026 July 16-19---International</p>
+										<p>2027 July 14-17---Cockshutt</p>
+										<p>2028 July 20-23---Moline</p>
+										<small>Disclaimer: Featured tractors subject to change upon collector requests</small>
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+									</div>
+								</div>
+							
+							</div>
+						</div>
+				
+					
+					<h3><strong>July 18th, 19th, 20th, 21st 2019</strong></h3>
+					<h2>At the Winamac Town Park</h2>
+					<a href="{{ url_for('directions') }}"><h4 class="bold">10 City Park Drive<br>
+						Winamac IN, 46996</h4></a>
+					<h4>Daily Adult Admission: $3.00</h4>
+					<h4>4 Day Pass: $9.00</h4>
+					<h4>(Children Under 12 free when accompanied by an adult)</h4>
+					
+					<a href="{{ url_for('static', filename='documents/2018PowerShowFlyerPrintable#2.pdf') }}" button type="button" class="btn btn-success btn-md">View Flyer</a>
+					
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="info1">
+					<img class="event-image" src="{{ url_for('static', filename='images/summer-tractor.JPG') }}">
+					<!--Put contact information and upcoming dates button -->
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--<div class="feature">
+		<h2>Featuring:</h2>
+			<img src="{{ url_for('static', filename='images/2018Logos/mflogo.jpg') }}">
+			<img src="{{ url_for('static', filename='images/2018Logos/mhlogo3.jpg') }}">
+			<img src="{{ url_for('static', filename='images/2018Logos/wallislogojpeg.jpg') }}">
+			<img src="{{ url_for('static', filename='images/2018Logos/wallis2.jpg') }}">
+	</div>-->
+	
+	
+
+	<div class="blurb">
+
+		<p>The Northern Indiana Power from the Past would be thrilled to have you at our summer show.  Come for a few hours or stay the whole day.  There is plenty to see and do.  We feature moving displays where you can see real antique farm machinery in action, doing what it was designed to do.  </p>
+		
+		<p>There are also many interesting stationary displays where you can take your time and look come and get and up close look at what was used in early agriculture.</p>
+		
+		<p>There are several buildings and outdoor areas are stuffed with flea marketers.  The incredible variety of old and new items they bring to sell is almost overwhelming.  Allow some time to browse them all and bring home a treasure.</p>
+		
+		<p>What event would be complete without food?  Over a dozen different food vendors are here to serve you something tasty.   Have a no cook day.  Come for breakfast, lunch, and dinner.</p>
+		
+		<p>If you’re in the mood for some great music and maybe some dancing, this is your place.  We feature different entertainment daily. Check out the daily tabs on the website to see what we have.  Looking just to relax and watch others perform?  The very popular horse pull, hilarious tractor square dancing, or intriguing weed wacker tractor pull might be for you.  This is a family show, we didn’t forget about your young ones.  Kids have their own games every day too!</p>
+		
+		<p>How much does it cost to attend? Not $20, not $15, not $10. No, not even $5.  Only $3.00 for adults and kids under 12 years old are FREE!  The entertainment is even included in this price.  It’s a deal you can’t pass up.  Can’t wait to see you there!</p>				
+		
+	</div>
+	
+	
+
+	<div class="events">
+		<h2>Daily Events - Starting at 10am Everyday</h2>
+		<h4 class="underline">All times are in Eastern time zone</h4>
+		<table class="daily-events">
+			<thead>
+				<th colspan="3"><h4>Flag Raising/National Anthem kicks off each day at 9 A.M.</h4></th>
+			</thead>
+			<tbody>
+				<tr>
+					<td>Antiques & Collectibles</td>
+					<td>Corn Shredder</td>
+					<td>Threshing</td>
+				</tr>
+				<tr>
+					<td>Sawmill</td>
+					<td>Steam Engines</td>
+					<td>Quilt Show</td>
+				</tr>
+				<tr>
+					<td>Flea Market</td>
+					<td>Baker Fan</td>
+					<td>Barn Beam Drill</td>
+				</tr>
+				<tr>
+					<td>Wood Planer</td>
+					<td>Horse & Wagon Rides</td>
+					<td>Pottery</td>
+				</tr>
+				<tr>
+					<td>Corn Sheller</td>
+					<td>Print Shop</td>
+					<td>Blacksmith</td>
+				</tr>
+				<tr>
+					<td>Shingle Mill</td>
+					<td>Buzz Saw</td>
+					<td>Baling</td>
+				</tr>
+				<tr>
+					<td colspan="3">1:30 P.M. - Daily - Children's Games (Dress appropriately) </td>
+				</tr>
+				<tr>
+					<td>Horse Sweep</td>
+					<td>Wooden Bowls</td>
+					<td>Crosscut Saw Contests</td>
+				</tr>
+				<tr>
+					<td colspan="3">Every day we break for lunch - Listen for the steam engine whistles</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+	<script>
+		$(document).ready(function(){
+			$("div.summer-schedule").children("ul").css("background-color", "green")
+			$("div.summer-schedule").children("ul").children("li").addClass("list-group-item")
+		});
+	</script>
+	
+	{{ events.content | safe }}
+		
+<!--<div class="summer-schedule">
+		<div class="row">
+			<div class="separate-days">
+				<h2>Special Daily Attractions</h2>
+				<h4 class="underline">Eastern time zone</h4>
+				<div class="col-md-2 col-md-offset-1">
+					<h4>Wed. 7/18</h4>
+					<ul class="list-group">
+						<li class="list-group-item">Preview Night ($1.00 per person)</li>
+						<li class="list-group-item">Hap's Chicken Bash 4:30 - 7:00</li>
+					</ul>
+				</div>
+
+				<div class="col-md-2"><h4>Thurs. 7/19</h4>
+					<ul class="list-group">
+						<li class="list-group-item">9:00 A.M.  Flag Raising</li>
+						<li class="list-group-item">10:00 A.M. Demonstrations Run</li>
+						<li class="list-group-item">Noon  Break for Lunch – Steam engine noon whistle</li>
+						<li class="list-group-item">1:00 P.M.  Daily events resume</li>
+						<li class="list-group-item">1:30 P.M.  Children’s Games</li>
+						<li class="list-group-item">4:00 P.M.  Demonstrations Run</li>
+						<li class="list-group-item">6:00 P.M. Annual Meeting</li>
+						<li class="list-group-item">7:00 P.M.  Skillet toss, Tractor square dancing</li>
+					</ul>
+				</div>
+				<div class="col-md-2">
+					<h4>Fri. 7/20</h4>
+					<ul class="list-group">
+						<li class="list-group-item">9:00 A.M.  Flag Raising</li>
+						<li class="list-group-item">10:00 A.M. Demonstrations Run</li>
+						<li class="list-group-item">11:00 A.M to 1:00 P.M. Greg Sanders (Bluegrass)</li>
+						<li class="list-group-item">Noon  Break for Lunch – Steam engine noon whistle</li>
+						<li class="list-group-item">1:00 P.M.  Daily events resume</li>
+						<li class="list-group-item">1:30 P.M.  Children’s Games</li>
+						<li class="list-group-item">4:00 P.M.  Demonstrations Run</li>
+						<li class="list-group-item">8:00 P.M.  Band: Eel River Band</li>
+					</ul>
+				</div>
+				<div class="col-md-2"><h4>Sat. 7/21</h4>
+					<ul class="list-group">
+						<li class="list-group-item">9:00 A.M.  Flag Raising</li>
+						<li class="list-group-item">10:00 A.M. Demonstrations Run</li>
+						<li class="list-group-item">11:00 - 1:00 P.M. - Greg Sanders (Bluegrass)</li>
+						<li class="list-group-item">Noon  Break for Lunch – Steam engine noon whistle</li>
+						<li class="list-group-item">1:00 P.M.  Daily events resume</li>
+						<li class="list-group-item">1:30 P.M.  Children’s Games</li>
+						<li class="list-group-item">4:00 P.M.  Demonstrations Run</li>
+						<li class="list-group-item">7:00 P.M. - Horse and Mule Pullers Association</li>
+						<li class="list-group-item">8:00 P.M. Band: The Whippersnappers (Bluegrass music)</li>
+						
+					</ul>
+				</div>
+				<div class="col-md-2"><h4>Sun. 7/22</h4>
+					<ul class="list-group">
+						<li class="list-group-item">8:00 A.M.  Worship Service</li>
+						<li class="list-group-item">9:00 A.M.  Flag Raising</li>
+						<li class="list-group-item">10:00 A.M.  Demonstrations Run</li>
+						<li class="list-group-item">10:00 A.M. - 2:00 P.M <a target="_blank" href="http://www.wwpa4fans.com/" target="_blank">Weed Wacker Pulling Association</a></li>
+						<li class="list-group-item">11:00 A.M.  Cornhole Tournament</li>
+						<li class="list-group-item">Noon  Break for Lunch – Steam engine noon whistle</li>
+						<li class="list-group-item">1:00 P.M.  Daily events resume</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div> -->
+
+
+	<div class="summer-show-info">
+		<h1>{{ info.name }}</h1>
+		<div class="body">
+		   {{ info.content | safe }}
+		</div>
+		
+		<div class="summer-map">
+			<h1>Summer Show Map</h1>
+			<img src="{{ url_for('static', filename='images/summer-map.png') }}">
+		</div>
+	</div>
+{% endblock %}

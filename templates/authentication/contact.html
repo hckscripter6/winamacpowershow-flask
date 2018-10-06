@@ -1,0 +1,17 @@
+{% extends 'authentication/authentication-base.html' %}
+{% from "authentication/_formhelpers.html" import render_field, render_submit %}
+
+{% block content %}
+	<h2>Update Meeting Dates</h2>
+	<form method="POST">
+		{{ form.csrf_token() }}
+		{{ render_field(form.name, class="form-control")  }}
+		{{ render_field(form.content, class="form-control") }}
+		{{ render_submit(form.submit, class="btn btn-md btn-primary") }}
+		
+	</form>
+	
+	<script>
+		CKEDITOR.replace('content', {height: 500});
+	</script>
+{% endblock %}

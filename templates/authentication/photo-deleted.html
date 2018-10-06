@@ -1,0 +1,9 @@
+{% extends 'authentication/authentication-base.html' %}
+{% from "authentication/_formhelpers.html" import render_field, render_submit %}
+
+{% block content %}
+<div class="delete_message" class="center">
+    <h2 style="color: red;">The image has been successfully deleted</h2>
+    <h3><a href="{{ url_for('edit_photos') }}">go back to photos</a></h3>
+</div>
+{% endblock content %}

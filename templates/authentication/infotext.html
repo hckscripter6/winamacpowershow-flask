@@ -1,0 +1,6 @@
+<p><a href="/dashboard/create">Create Text</a></p>
+	<ul>
+	{% for display in info %}
+		<li><a href="/dashboard/{{ display.id }}/update">{{ display.name }}</a></li>
+	{% endfor %}
+	</ul>

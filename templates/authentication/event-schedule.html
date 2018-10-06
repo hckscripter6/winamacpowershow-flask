@@ -1,0 +1,25 @@
+{% extends 'authentication/authentication-base.html' %}
+{% from "authentication/_formhelpers.html" import render_field, render_submit %}
+
+{% block content %}
+	
+	<form method="POST" action="{{ url_for('update_event_schedule') }}">
+    <h2><strong>Home Page</strong> Event Schedule</h2>
+		{{ form.csrf_token() }}
+		{{ render_field(form.indexName, class="form-control")  }}
+		{{ render_field(form.indexContent, class="form-control") }}
+  <hr>
+    <h2><strong>Summer Show Page</strong> Event Schedule</h2>
+		{{ render_field(form.summerName, class="form-control")  }}
+        {{ render_field(form.summerContent, class="form-control") }}
+        
+		{{ render_submit(form.submit, class="btn btn-md btn-primary") }}
+    </form>
+    <br>
+	
+	<script>
+		CKEDITOR.replace('summerContent', {height: 300, contentsCss: [CKEDITOR.basePath + 'contents.css', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'],mallowedContent: true});
+        CKEDITOR.replace('indexContent', {height: 300, contentsCss: [CKEDITOR.basePath + 'contents.css', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'], allowedContent: true});
+	</script>
+{% endblock %}
+

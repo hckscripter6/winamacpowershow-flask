@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}
+	Photos
+{% endblock %}
+
+<!-- Adujust sizes for photo's and make tabs for 2016.  Have pagination buttons -->
+{% block content %}
+
+{% include '/image-model.html' %}
+<div class="photos">
+    <h1 style="margin-bottom: .5em;">Photos</h1>
+    <h5 class="center">Click on photo to enlarge</h5>
+    <div class="image-display">
+        {% for display in sets %}
+        
+            <div id="{{ display.tag }}">
+            
+            <h2 class="center">{{ display.name }}</h2>
+        
+            {% for images in display.images.all() %}
+                <img src="{{ s3projects +'/'+ images.set.name +'/'+ images.name }}">
+            {% endfor %}
+        
+            </div>
+        
+        {% endfor %}
+    </div>
+</div>
+			
+
+{% endblock content %}
