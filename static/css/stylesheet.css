@@ -94,7 +94,7 @@ div.jumbotron img {
 div.notification,
 div.mission, 
 div.schedule,
-div.massey,
+div.graham,
 div.thanks {
 	border: 1px solid rgb(63, 60, 60);
 	border-radius: .25em;
@@ -180,15 +180,15 @@ div.schedule p {
 	font-size: 1.15em;
 }
 
-div.massey {
+div.graham {
 	padding: .5em;
 	margin-right: -1.1em;
 	text-align: center;
 }
 
-div.massey h2 {
+div.graham h2 {
 	margin: 0;
-	font-size: 2em;
+	font-size: 1.9em;
 }
 
 div.thanks h2 {
@@ -204,8 +204,8 @@ div.thanks {
 	margin-left: -.3em;
 }
 
-div.massey img {
-	width: 300px;
+div.graham img {
+	width: 250px;
 	height: auto;
 	display: block;
 	margin: .25em auto;
@@ -509,17 +509,21 @@ div.single-update p:first-of-type {
 
 @media only screen and (max-width: 1200px) {
 	div.thanks h2 {
-		font-size: 1.78em;
+		font-size: 1.7em;
 	}		
 
-	div.massey h2 {
-		font-size: 1.45em;
+	div.thanks {
+		padding: 3.5em .5em;
+	}
+
+	div.graham h2 {
+		font-size: 1.6em;
 	}
 }
 
 @media only screen and (max-width: 991px) {
 /** Homepage **/
-	div.massey {
+	div.graham {
 		margin-right: 0;
 		margin-bottom: .5em;
 	}
@@ -660,7 +664,7 @@ div.single-update p:first-of-type {
 		padding: .9em;
 	}
 
-	div.massey img {
+	div.graham img {
 		width: 275px;
 	}
 
@@ -797,12 +801,12 @@ div.single-update p:first-of-type {
 		font-size: 1.15em;
 	}
 
-	div.massey h2 {
+	div.graham h2 {
 		font-size: 1.3em;
 	}
 
-	div.massey img {
-		width: 90%;
+	div.graham img {
+		width: 220px;
 	}
 
 	div.thanks h2 {
