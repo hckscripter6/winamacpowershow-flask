@@ -210,6 +210,7 @@ div.graham img {
 	display: block;
 	margin: .25em auto;
 	border: 1px solid grey;
+	border: 1px solid black;
 }
 
 div.ribbon {

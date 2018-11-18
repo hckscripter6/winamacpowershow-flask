@@ -189,7 +189,7 @@ def update_meeting_date():
 def update_club_members():
 	form = InfoForm()
 	members = ClubMembers.query.first()
-	dates = MeetingDates.query.first()
+	dates = MeetingDate.query.first()
 	form.name.data = members.name
 	form.content.data = members.content
 
