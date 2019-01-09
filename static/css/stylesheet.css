@@ -4,7 +4,7 @@
 
 body {
 	background-color: #E4E8E5;
-	font-family: Roboto;
+	font-family: 'Roboto', serif;
 	color: black;
 }
 
@@ -91,6 +91,7 @@ div.jumbotron img {
 	border: 1px solid black;
 }
 
+div.toy-show-banner,
 div.notification,
 div.mission, 
 div.schedule,
@@ -99,6 +100,17 @@ div.thanks {
 	border: 1px solid rgb(63, 60, 60);
 	border-radius: .25em;
 	background-color: #C4C9C5;
+}
+
+div.toy-show-banner {
+	margin-top: .5em;
+	padding: 1em;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-align: center;
+}
+
+div.toy-show-banner h2 {
+	font-size: 3em;
 }
 
 div.notification {
@@ -643,6 +655,10 @@ div.single-update p:first-of-type {
 
 	div.mission p {
 		font-size: 1.2em;
+	}
+
+	div.toy-show-banner h2 {
+		font-size: 2em;
 	}
 
 	div.schedule h2 {
