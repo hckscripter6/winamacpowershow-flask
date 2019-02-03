@@ -22,6 +22,14 @@ nav {
 
 }
 
+nav img.facebook {
+	width: 40px;
+	height: 40px;
+	position: relative;
+	top: .4em;
+	left: .4em;
+}
+
 div.container {
 	padding-right: .5em;
 	padding-left: .5em;
@@ -205,12 +213,11 @@ div.graham h2 {
 
 div.thanks h2 {
 	margin: 0;
-	font-size: 2em;
+	font-size: 2.225em;
 }
 
 div.thanks {
 	padding: 4.125em .5em;
-	font-size: 1.2em;
 	text-align: center;
 	font-family: Oxygen;
 	margin-left: -.3em;
