@@ -115,10 +115,11 @@ div.banner {
 	margin: .75em 0;
 	text-align: center;
 	font-family: 'Oxygen';
-	background-image: url('../images/2018 Threshing2[353].JPG');
-	background-size: 97em 35em;
+	/*background-image: url('../images/2018 Threshing2[353].JPG');*/
+	background-size: 131em 98em;
 	background-repeat: no-repeat;
 	background-position: center;
+	text-shadow: -1px 0 white, 0 1px white, 1px 0 hite, 0 -1px white;
 }
 
 div.banner h1 {
