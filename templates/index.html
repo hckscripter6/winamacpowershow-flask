@@ -15,12 +15,6 @@ Winamac Power From The Past
 
 {% block content %}
 
-<div class="mission">
-	<h2 class="bold">Philosophy of the Northern Indiana Power from the Past, Inc.</h2>
-	
-	<p>The functional purpose of this corporation is to preserve, rejuvenate, and display antique farm machinery and any other form of machinery utilized in the growth of the U.S.A. Futher, it is the intention of the corporation to foster and perpetuate in the minds of all Americans respect, interest, and recognition of the vital role that different forms of machinery, no matter what their power source, have played in the development of our society as a whole.</p>
-</div>
-
 {% if notification %}
 <div class="notification">
 	<h2><strong>Stay Updated!</strong></h2>
@@ -39,7 +33,7 @@ Winamac Power From The Past
 {% endif %}
 
 
-<div class="schedule">
+<!--<div class="schedule">
 		<ul class="nav nav-pills schedule-bar">
 			<li><h4>Summer Show:</h4></li>
 			<li><a data-toggle="tab" href="#menu7" class="active">Admission</a></li>
@@ -51,196 +45,15 @@ Winamac Power From The Past
 			<li><a data-toggle="tab" href="#menu5">Sunday 7/22</a></li>
 		</ul>
 {{ events.content | safe }}
-<!--
 
-	<div class="tab-content">
-	  <div id="menu7" class="tab-pane fade in active">
-		<strong><em><h2>Gate Fee includes: All Daily Activities, Stage Events and Horse Pull!</h2></em></strong>
-		<h3>Only <strong>$3.00</strong> Gate Fee</h3>
-		<h3>Free Parking</h3>
-		<h3><strong>$9.00</strong> Four Day Pass</h3>
-		<h4>Children under 12 admitted free when accompanied by an adult</h4>
-		<h4><strong><em>Golf cart & gator type vehicles must show proof of insurance.</em></strong></h4>
-	  </div>
-	  
-	  <div id="menu6" class="tab-pane fade">
-		  <table class="table table-bordered table-responsive index-table">
-			<thead>
-				<tr>
-					<th style="text-align: center;" colspan="3"><h2 style="margin: 0;">Daily Events</h2></td>
-				</tr>
-			</thead>
-			<tbody>
-			  <tr>
-				<td>Flea Market</td>
-				<td>Antiques and Collectibles</td>
-				<td>Working Displays</td>
-			  </tr>
-			  
-			  <tr>
-				<td>Hit & Miss Engines</td>
-				<td>Antique Tractors</td>
-				<td>Steam Engines</td>
-			  </tr>
-			  
-			  <tr>
-				<td>Threshing</td>
-				<td>Sawmill</td>
-				<td>Baling</td>
-			  </tr>
-			  
-			  <tr>
-				<td>Baker Fan</td>
-				<td>Corn Shredder and Sheller</td>
-				<td>Shingle Mill</td>
-			  </tr>
-			  
-			  <tr>
-				<td>Planer</td>
-				<td>Edger</td>
-				<td>Children's Games</td>
-			  </tr>
-			  
-			  <tr>
-				<td>Old Crafts Demonstration</td>
-				<td>Quilt Show</td>
-				<td>Shuttle Wagons</td>
-			  </tr>
-			  
-			  <tr>
-				<td>Black Smithing By: Perry</td>
-				<td>Outboards</td>
-				<td>Wood Bowl Making</td>
-			  </tr>
-			  
-			  <tr>
-				<td>Grist Mill</td>
-				<td>Barn Beam Drilling</td>
-				<td>Pottery</td>
-			  </tr>
-			  
-			  <tr>
-				<td>Print Shop</td>
-				<td>Rug Making</td>
-				<td>Garden Tractors</td>
-			  </tr>
-			  
-			</tbody>
-		  </table>
-		
-	  </div>
-	  
-	  <div id="menu1" class="tab-pane fade">
-		<h3>Wednesday 7/18</h3>
-		<h5>All times are in Eastern time zone</h5>
-		<h4><strong>Preview Night</strong></h4>
-		<p><strong>($1 Gate Fee)</strong></p>
-		<p>Haps Chicken Bash 4:30-7:00</p>
-		<p>Sponsored by: <strong>Boy Scout Troop 229</strong></p>
-		
-	  </div>
-	  
-	  <div id="menu2" class="tab-pane fade">
-		<h3>Thursday 7/19</h3>
-		<div class="row">
-			<h4><strong>Daily Events</strong></h4>
-			<h5>All times are in Eastern time zone</h5>
-			<div class="col-md-6">
-				<div class="left-push">
-					<p><strong>Thursday Night Entertainment</strong></p>
-					<p>9:00 A.M.  Flag Raising</p>
-					<p>10:00 A.M. Demonstrations Run</p>
-					<p>Noon  Break for Lunch – Steam engine noon whistle</p>
-					<p>1:00 P.M.  Daily events resume</p>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="right-push">
-					<p>1:30 P.M.  Children’s Games</p>
-					<p>4:00 P.M.  Demonstrations Run</p>
-					<p>6:00 P.M.  Club Meeting</p>
-					<p>7:00 P.M.  Skillet toss, Tractor square dancing</p>
-				</div>
-			</div>
-		</div>
-	  </div>
-	  
-	  <div id="menu3" class="tab-pane fade">
-		<h3>Friday 7/20</h3>
-		<h4><strong>Daily Events</strong></h4>
-		<h5>All times are in Eastern time zone</h5>
-		<div class="row">
-			<div class="col-md-6">
-				<div class="left-push">
-					<p>9:00 A.M.  Flag Raising</p>
-					<p>10:00 A.M. Demonstrations Run</p>
-					<p>11:00 A.M to 1:00 P.M. Greg Saunders (Bluegrass)</p>
-					<p>Noon  Break for Lunch – Steam engine noon whistle</p>
-				</div>
-			</div>
-			<div class="col-md-6">
-				<div class="right-push">
-					<p>1:00 P.M.  Daily events resume</p>
-					<p>1:30 P.M.  Children’s Games</p>
-					<p>4:00 P.M.  Demonstrations Run</p>
-					<p>8:00 P.M.  Band:  Eel River Band</p>
-				</div>
-			</div>
-		</div>
-		
-	  </div>
-	  
-	  <div id="menu4" class="tab-pane fade">
-			<h3>Saturday 7/21</h3>
-			<h4><strong>Daily Events</strong></h4>
-			<h5>All times are in Eastern time zone</h5>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="left-push">
-						<p><strong>Saturday Night Entertainment</strong></p>
-						<p>9:00 A.M.  Flag Raising</p>
-						<p>10:00 A.M. Demonstrations Run</p>
-						<p>11:00 A.M to 1:00 P.M.  Music:  Greg Sanders (Bluegrass)</p>
-						<p>Noon  Break for Lunch – Steam engine noon whistle</p>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="right-push">
-						<p>1:00 P.M.  Daily events resume</p>
-						<p>1:30 P.M.  Children’s Games</p>
-						<p>4:00 P.M.  Demonstrations Run</p>
-						<p>7:00 P.M Horse Pull brought to you by Horse and Mule Pullers Association</p>
-						<p>8:00 P.M.  Band:  The Whippersnappers (Bluegrass music)</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	
-		<div id="menu5" class="tab-pane fade">
-			<h3>Sunday 7/22</h3>
-			<h4><strong>Daily Events</strong></h4>
-			<h5>All times are in Eastern time zone</h5>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="left-push">
-						<p>8:00 A.M.  Worship Service</p>
-						<p>9:00 A.M.  Flag Raising</p>
-						<p>10:00 A.M.  Demonstrations Run</p>
-						<p><p>10:00 A.M. - 2:00 P.M. <a target="_blank" href="http://www.wwpa4fans.com/">Weed Wacker Pullers Association</a></p></p>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="right-push">
-						<p>11:00 A.M.  Cornhole Tournament</p>
-						<p>Noon  Break for Lunch – Steam engine noon whistle</p>
-						<p>1:00 P.M.  Daily events resume</p>
+ -->
+<div class="banner">
+	<h1 class="center">Summer Show </h1>
+	<h2>July 18th, 19th, 20th, 21st</h2>
+	<h3>Check out our event page!</h3>
+	<h4>$3.00 admission per day or $9.00 for four days</h4>
 
-					</div>
-				</div>
-			</div>
-		 </div>
-	</div>-->
-</div> 
+</div>
 <div class="row" style="overflow: auto;">
 	<div class="col-md-5">
 		<div class="graham">
@@ -256,5 +69,12 @@ Winamac Power From The Past
 		</div>
 	</div>
 </div>
+
+<div class="mission">
+	<h2 class="bold">Philosophy of the Northern Indiana Power from the Past, Inc.</h2>
+	
+	<p>The functional purpose of this corporation is to preserve, rejuvenate, and display antique farm machinery and any other form of machinery utilized in the growth of the U.S.A. Futher, it is the intention of the corporation to foster and perpetuate in the minds of all Americans respect, interest, and recognition of the vital role that different forms of machinery, no matter what their power source, have played in the development of our society as a whole.</p>
+</div>
+
 {% endblock %}
 

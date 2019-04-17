@@ -100,6 +100,7 @@ div.jumbotron img {
 }
 
 div.toy-show-banner,
+div.banner,
 div.notification,
 div.mission, 
 div.schedule,
@@ -110,6 +111,19 @@ div.thanks {
 	background-color: #C4C9C5;
 }
 
+div.banner {
+	margin: .75em 0;
+	text-align: center;
+	font-family: 'Oxygen';
+	background-image: url('../images/2018 Threshing2[353].JPG');
+	background-size: 97em 35em;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+div.banner h1 {
+	font-size: 3em;
+}
 div.toy-show-banner {
 	margin-top: .5em;
 	padding: 1em;
