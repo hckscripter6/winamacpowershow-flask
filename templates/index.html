@@ -47,13 +47,19 @@ Winamac Power From The Past
 {{ events.content | safe }}
 
  -->
+
+<!--
 <div class="banner">
-	<h1 class="center">Summer Show </h1>
+	<h1 class="center">42nd Annual Summer Show </h1>
 	<h2>July 18th, 19th, 20th, 21st</h2>
 	<h3><a href="{{ url_for('summer_show') }}">Check out our event page!</a></h3>
 	<h4>$3.00 admission per day or $9.00 for four days</h4>
 
+</div>-->
+<div class="banner">
+    <a href="{{ url_for('summer_show') }}"><img src="{{ url_for('static', filename='images/2019-nifpft-front-page.jpg') }}"></a>
 </div>
+
 <div class="row" style="overflow: auto;">
 	<div class="col-md-5">
 		<div class="graham">
