@@ -9,7 +9,7 @@ Winamac Power From The Past
 			<img src="{{ url_for('static', filename='images/POP.png') }}">
 		</div>
 		<div class="ribbon">
-			<h3>2019 Summer Show Dates July 18th, 19th, 20th, 21st</h3>
+			<h3>2020 Summer Show Dates July 16th, 17th, 18th, 19th</h3>
 		</div>
 {% endblock %}
 
@@ -21,7 +21,7 @@ Winamac Power From The Past
 	<div class="single-update">
 		{% for display in notification %}
 		
-				<h3>{{ display.name }}</strong></h3>
+				<h3><strong>{{ display.name }}</strong></h3>
 				<h5>{{ display.created_at.strftime('%b %d, %Y') }}</h5>
 			
 					<p>{{ display.content | safe }}</p>
@@ -56,7 +56,7 @@ Winamac Power From The Past
 	<h4>$3.00 admission per day or $9.00 for four days</h4>
 
 </div>-->
-<div class="banner">
+<!--<div class="banner">
     <a href="{{ url_for('summer_show') }}"><img src="{{ url_for('static', filename='images/2019-nifpft-front-page.jpg') }}"></a>
 </div>
 <div class="banner">
@@ -68,7 +68,7 @@ Winamac Power From The Past
 
         </div>
     </a>
-</div>
+</div>-->
 <!--
 <div class="row" style="overflow: auto;">
 	<div class="col-md-5">
@@ -87,8 +87,9 @@ Winamac Power From The Past
 </div>
 -->
 
-<div class="tractor-picture">
-    <img src="{{ url_for('static', filename='images/IMG_6368.JPG') }}">
+<div class="tractor-picture" style="margin-top: .5em;">
+    <h2 class="bold" style="text-align: center; margin: .25em 0; padding: 0;">Featuring Minneapolis Moline</h2>
+    <img src="{{ url_for('static', filename='images/moline.jpg') }}">
 </div>
 
 <div class="mission">
