@@ -4,7 +4,7 @@
 
 body {
 	background-color: #E4E8E5;
-	font-family: 'Roboto', serif;
+	font-family: 'Roboto', sans-serif;
 	color: black;
 }
 
@@ -129,15 +129,23 @@ div.banner {
 div.banner img {
     width: 100%;
 }
+
 div.toy-show-banner {
 	margin-top: .5em;
-	padding: 1em;
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	padding: .25em;
 	text-align: center;
 }
 
+
 div.toy-show-banner h2 {
 	font-size: 3em;
+    font-weight: bold;
+    margin: .4em;
+    
+}
+
+div.toy-show-banner h3 {
+    margin-bottom: 1em;
 }
 
 div.notification {
@@ -820,6 +828,10 @@ div.single-update p:first-of-type {
 
 	div.ribbon h3 {
 		font-size: 1em;
+	}
+    
+    div.toy-show-banner h2 {
+		font-size: 1.9em;
 	}
 	
 	div.mission h2 {
