@@ -3,14 +3,14 @@ boto3==1.5.30
 botocore==1.8.44
 click==6.7
 docutils==0.14
-Flask==0.12.2
+Flask==1.1.1
 Flask-Login==0.4.1
-Flask-SQLAlchemy==2.3.2
+Flask-SQLAlchemy==2.4.1
 Flask-WTF==0.14.2
 gunicorn==19.7.1
 html5lib==1.0.1
 itsdangerous==0.24
-Jinja2==2.10
+Jinja2==2.10.3
 jmespath==0.9.3
 lxml==4.1.1
 MarkupSafe==1.0
@@ -20,5 +20,5 @@ s3transfer==0.1.13
 six==1.11.0
 SQLAlchemy==1.2.2
 webencodings==0.5.1
-Werkzeug==0.14.1
+Werkzeug==0.16.0
 WTForms==2.1
