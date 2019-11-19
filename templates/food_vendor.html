@@ -9,6 +9,38 @@ Food Vendor Information
 	 <h1>{{ info.name }}</h1>
 	 <div class="body">
 		{{ info.content | safe }}
+        
 	 </div>
 </div>
+
+<!-- Modal -->
+<div id="contract" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content" style="background-color: #dbd5d5;">
+      <div class="modal-body" style="text-align: center;">
+        <h2 style="color: red; margin: 0;">IMPORTANT!</h2>
+        <h5><strong>You MUST contact the director in charge before sending in a contract.</strong></h5>
+          
+        <p>There are many advance reservations and those who send in a contract without prior approval are NOT guaranteed a spot.  We look forward to returning vendors and also new ones'  Please call Rachelle Ortman at (574)946-3206</p>
+          
+      </div>
+      <div class="modal-footer">
+        <button class="btn btn-success pull-left"><a href="{{ url_for('static', filename='documents/NIPFTP Summer Show Food Vendor Contract with $.docx') }}">I understand and wish to view the contract</a></button>
+        <button type="button" class="btn btn-default btn-primary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+    
+<script>
+$(document).ready(function(){
+
+    $('.contract').html('<button type="button" class="btn btn-success btn-md" data-toggle="modal" data-target="#contract">View Contract</button>').css('margin-bottom', '.5em');
+
+});  
+</script>
+
 {% endblock %}
