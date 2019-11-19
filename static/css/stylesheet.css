@@ -554,6 +554,23 @@ div.single-update p:first-of-type {
 	font-size: 1.25em;
 }
 
+/*  Contract modal */
+div#contract div.modal-content {
+    background-color: #dbd5d5 !important;
+    text-align: center;
+}
+
+div#contract h2 {
+    margin: 0;
+    color: red;
+}
+
+div#contract button.view-button {
+    float: left;
+}
+
+
+
 @media only screen and (max-width: 1200px) {
 	div.thanks h2 {
 		font-size: 1.7em;
@@ -970,5 +987,18 @@ div.single-update p:first-of-type {
 	p {
 		font-size: .975em;
 	}
+    
+  /* contract modal */
+    
+    div#contract button.view-button,
+    div#contract button.close-button {
+        float: none;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    div#contract button.view-button {
+        margin-bottom: 1em;
+    }
 
 }
